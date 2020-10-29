@@ -30,9 +30,9 @@ public class TaxiService {
 	 * @return
 	 */
 	public void validate(Ride ride) throws InvalidRideException {
-        if ((ride.getPassengers().size()<5) && (ride.getPassengers().size()>0) && (ride.getDriver() != null)){
-            return;
+        if ((ride.getPassengers().size()<1) || (ride.getPassengers().size()>4) || (ride.getDriver() == null)){
+            throw new InvalidRideException();
         }
-		throw new InvalidRideException(); 
+		
 	}
 }
