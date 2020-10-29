@@ -14,7 +14,7 @@ public class Ride {
 		super();
 	}
     
-    public Ride(Driver driver,Passenger[] passengers) {
+    public Ride(Driver driver, Passenger[] passengers) {
         this.driver = driver;
         this.passengers = passengers;
 	}

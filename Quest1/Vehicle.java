@@ -20,7 +20,7 @@ public class Vehicle implements Driveable {
 	private String make;
 	private String model;
 	private String plateNumber;
-	public boolean inTransit;
+	private boolean inTransit;
     
     public void drive() {
         this.inTransit = true;
@@ -56,6 +56,14 @@ public class Vehicle implements Driveable {
 	
 	public void setPlateNumber(String plateNumber) {
 		this.plateNumber = plateNumber;
+	}
+    
+    public boolean getInTransit() {
+        return this.inTransit;
+	}
+    
+    public void setInTransit(boolean isInTransit) {
+        this.inTransit = isInTransit;
 	}
 
 }

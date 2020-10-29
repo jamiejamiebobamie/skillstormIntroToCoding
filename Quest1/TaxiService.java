@@ -10,7 +10,7 @@
 public class TaxiService {
 
 	public Ride process(Driver driver, Passenger[] passengers) {
-        Ride ride = new Ride(driver,passengers);
+        Ride ride = new Ride(driver, passengers);
 		return ride;  // create a Ride and return it
 	}
 	

@@ -18,9 +18,9 @@
  */
 public class Driver extends User {
 
-	public Driveable vehicle;
+	private Vehicle vehicle;
      
-    public Driver(Driveable vehicle) {
+    public Driver(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
     
@@ -30,11 +30,11 @@ public class Driver extends User {
 		this.vehicle.drive();
 	}
     
-    public void setVehicle(Driveable vehicle) {
+    public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;   
     }
     
-    public Driveable getVehicle() {
+    public Vehicle getVehicle() {
         return vehicle;   
     }
 
